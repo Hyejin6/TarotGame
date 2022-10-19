@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class GameActivity extends AppCompatActivity {
+public class GameActivity2 extends AppCompatActivity {
 
     ImageView CardsImg;
     TextView cardClickText;
@@ -23,6 +23,8 @@ public class GameActivity extends AppCompatActivity {
     Button MixBtn, pickBtn;
 
     ArrayList<TarotData> tarotdatalist;
+
+    GridView TarotGridview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,6 +117,10 @@ public class GameActivity extends AppCompatActivity {
                             public void run() {
                                 CardsImg.setImageResource(R.drawable.cards);
                                 cardClickText.setVisibility(View.GONE);
+
+                                pickKor.setText("카드 선택");
+                                pickBtn.setText("Select");
+
                                 mixKor.setVisibility(View.VISIBLE);
                                 pickKor.setVisibility(View.VISIBLE);
                                 MixBtn.setVisibility(View.VISIBLE);
@@ -177,19 +183,10 @@ public class GameActivity extends AppCompatActivity {
         pickBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TarotData result = tarotdatalist.get(0);
-                String rTtitle = result.getTarotName();
-                String rStr = result.getTarotStr();
-                String rTag = result.getTarotTag();
-                int rImg = result.getTarotImg();
-
-                Intent intent = new Intent(getApplicationContext(), FinalActivity.class);
-                intent.putExtra("rTitle", rTtitle);
-                intent.putExtra("rStr", rStr);
-                intent.putExtra("rTag", rTag);
-                intent.putExtra("rImg", rImg);
+                Intent intent = new Intent(getApplicationContext(), SelectActivity.class);
+                intent.putExtra("tarot", tarotdatalist);
                 startActivity(intent);
-                finish();
+
             }
         });
 

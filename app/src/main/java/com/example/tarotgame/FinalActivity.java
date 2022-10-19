@@ -40,10 +40,21 @@ public class FinalActivity extends AppCompatActivity  {
         tarotTag.setText(reTag);
         tarotImg.setImageResource(reImg);
 
+        Intent intent1 = getIntent();
+        String title = intent1.getStringExtra("title");
+        String str = intent1.getStringExtra("str");
+        String tag = intent1.getStringExtra("tag");
+        int img = intent1.getIntExtra("img", 0);
+
+        tarotTitle.setText(title);
+        tarotStr.setText(str);
+        tarotTag.setText(tag);
+        tarotImg.setImageResource(img);
+
         resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(getApplicationContext(), GameActivity.class);
+                Intent intent1 = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(intent1);
                 finish();
             }

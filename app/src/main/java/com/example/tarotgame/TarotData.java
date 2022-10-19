@@ -1,6 +1,8 @@
 package com.example.tarotgame;
 
-public class TarotData {
+import java.io.Serializable;
+
+public class TarotData implements Serializable {
 
     private String tarotName;
     private String tarotStr;
@@ -17,15 +19,16 @@ public class TarotData {
     public String getTarotName() {
         return this.tarotName;
     }
-
     public String getTarotStr() {
         return this.tarotStr;
     }
-
-    public String getTarotTag() { return this.tarotTag; }
-
+    public String getTarotTag() {
+        return this.tarotTag;
+    }
     public int getTarotImg() {
         return this.tarotImg;
     }
+
+
 
 }

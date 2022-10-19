@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/activity_game.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/activity_game2.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/activity_main1.xml" value="0.2390625" />
+        <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/activity_menu.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/activity_select.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/tarot_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/sogoh/2005905_project/TarotGame/app/src/main/res/layout/tarot_select_layout.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>
