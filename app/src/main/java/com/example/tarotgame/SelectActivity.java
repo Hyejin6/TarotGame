@@ -43,7 +43,7 @@ public class SelectActivity extends AppCompatActivity {
         tarotList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent cardIntent = new Intent(getApplicationContext(), FinalActivity.class);
+                Intent cardIntent = new Intent(getApplicationContext(), FinalActivity2.class);
                 cardIntent.putExtra("title", tarotDataList.get(position).getTarotName());
                 cardIntent.putExtra("str", tarotDataList.get(position).getTarotStr());
                 cardIntent.putExtra("tag", tarotDataList.get(position).getTarotTag());

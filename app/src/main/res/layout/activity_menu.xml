@@ -16,15 +16,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/test1goBtn"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
+                android:layout_gravity="center"
                 android:backgroundTint="#FFFFFF"
-                android:text="카드 랜덤선택"
+                android:text="카드 랜덤 선택"
+                android:textAlignment="center"
                 android:textColor="#673AB7"
                 android:textSize="18dp"
                 app:strokeColor="#FFFFFF"
@@ -35,15 +39,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/test2goBtn"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
+                android:layout_gravity="center"
                 android:backgroundTint="#FFFFFF"
-                android:text="카드 직접선택"
+                android:text="카드 직접 선택"
+                android:textAlignment="center"
                 android:textColor="#673AB7"
                 android:textSize="18dp"
                 app:strokeColor="#FFFFFF"

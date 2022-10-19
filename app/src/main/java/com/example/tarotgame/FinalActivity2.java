@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FinalActivity extends AppCompatActivity  {
+public class FinalActivity2 extends AppCompatActivity  {
 
     ImageView tarotImg;
     TextView tarotTitle, tarotStr, tarotTag;
@@ -29,22 +29,22 @@ public class FinalActivity extends AppCompatActivity  {
         resetBtn = (Button) findViewById(R.id.resetBtn);
         closeBtn = (Button) findViewById(R.id.closeBtn);
 
-        Intent intent = getIntent();
-        String reTitle = intent.getStringExtra("rTitle");
-        String reStr = intent.getStringExtra("rStr");
-        String reTag = intent.getStringExtra("rTag");
-        int reImg = intent.getIntExtra("rImg", 0);
+        Intent intent1 = getIntent();
+        String title = intent1.getStringExtra("title");
+        String str = intent1.getStringExtra("str");
+        String tag = intent1.getStringExtra("tag");
+        int img = intent1.getIntExtra("img", 0);
 
-        tarotTitle.setText(reTitle);
-        tarotStr.setText(reStr);
-        tarotTag.setText(reTag);
-        tarotImg.setImageResource(reImg);
+        tarotTitle.setText(title);
+        tarotStr.setText(str);
+        tarotTag.setText(tag);
+        tarotImg.setImageResource(img);
 
         resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(getApplicationContext(), MenuActivity.class);
-                startActivity(intent1);
+                Intent intent2 = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(intent2);
                 finish();
             }
         });
@@ -60,7 +60,7 @@ public class FinalActivity extends AppCompatActivity  {
 
     // 앱 종료
     void popup() {
-        AlertDialog.Builder msgBuilder = new AlertDialog.Builder(FinalActivity.this)
+        AlertDialog.Builder msgBuilder = new AlertDialog.Builder(FinalActivity2.this)
                 .setTitle("알림")
                 .setMessage("앱을 종료하시겠습니까?")
                 .setPositiveButton("종료", new DialogInterface.OnClickListener() {
